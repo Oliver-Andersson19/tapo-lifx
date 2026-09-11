@@ -1,8 +1,7 @@
 services:
   smarthome-starter:
     build: .
-    ports:
-      - "3000:3000"
+    network_mode: host
     environment:
       - TAPO_EMAIL=${TAPO_EMAIL}
       - TAPO_PASSWORD=${TAPO_PASSWORD}
