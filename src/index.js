@@ -73,11 +73,11 @@ app.post('/lights/:id/off', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', message: 'Smart home starter API is running' });
+  res.json({ status: 'ok', message: 'API is running' });
 });
 
 lifx.startLifxDiscovery();
 
 app.listen(PORT, () => {
-  console.log(`Smart home starter API listening on http://localhost:${PORT}`);
+  console.log(`API listening on http://localhost:${PORT}`);
 });
