@@ -5,4 +5,5 @@ services:
     environment:
       - TAPO_EMAIL=${TAPO_EMAIL}
       - TAPO_PASSWORD=${TAPO_PASSWORD}
+      - PORT=${PORT}
     restart: unless-stopped
